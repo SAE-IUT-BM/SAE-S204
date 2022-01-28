@@ -9,4 +9,4 @@ groupe numéro : 4
 
 URL du projet github : https://github.com/SAE-IUT-BM/SAE-S204
 
-URL du site pythonanywhere :
+URL du site pythonanywhere : http://saes204.pythonanywhere.com/
