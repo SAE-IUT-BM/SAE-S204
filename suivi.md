@@ -1,23 +1,20 @@
-                       (1er jour)               (2eme jour)
-Semaine / Noms      Tâche     Durée           Tâche     Durée
+SEMAINE 1 : <br/>
+Hugo LEFORT : MCD 2h <br/>
+Mael TURCHETTO : MCD 2h <br/>
+Maxime THEVENEAU : MCD 2h <br/>
+Théo DAL GOBBO : MCD 2h <br/><br/>
 
-SEMAINE 1 :
-Hugo LEFORT         MCD       2h
-Mael TURCHETTO      MCD       2h 
-Maxime THEVENEAU    MCD       2h
-Théo DAL GOBBO      MCD       2h
+Semaine 2 : <br/>
+Hugo LEFORT : Cahier des charges 2h / PyCharm 2h   
+Mael TURCHETTO : Cahier des charges 2h / PyCharm 2h
+Maxime THEVENEAU : Cahier des charges 2h / PyCharm 2h
+Théo DAL GOBBO : Cahier des charges 2h / PythonAnywhere 2h
 
-Semaine 2 :
-Hugo LEFORT         Cahier des charges 2h     PyCharm 2h   
-Mael TURCHETTO      Cahier des charges 2h     PyCharm 2h
-Maxime THEVENEAU    Cahier des charges 2h     PyCharm 2h
-Théo DAL GOBBO      Cahier des charges 2h     PythonAnywhere 2h
-
-Semaine 3 :         
-Hugo LEFORT         PyCharm 2h                PyCharm 2h
-Mael TURCHETTO      PyCharm 2h                PythonAnywhere 1h / PyCharm 1h
-Maxime THEVENEAU    PyCharm 2h                PyCharm 2h
-Théo DAL GOBBO      PyCharm 2h                PythonAnywhere 1h / PyCharm 1h
+Semaine 3 : <br/>     
+Hugo LEFORT : PyCharm 4h
+Mael TURCHETTO : PyCharm 3h / PythonAnywhere 1h
+Maxime THEVENEAU : PyCharm 4h
+Théo DAL GOBBO : PyCharm 3h / PythonAnywhere 1h
 
 Semaine 4 :
 Hugo LEFORT         
