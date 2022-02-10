@@ -5,10 +5,10 @@ Maxime THEVENEAU : MCD 2h <br/>
 Théo DAL GOBBO : MCD 2h <br/><br/>
 
 Semaine 2 : <br/>
-Hugo LEFORT : Cahier des charges 2h / PyCharm 2h   
-Mael TURCHETTO : Cahier des charges 2h / PyCharm 2h
-Maxime THEVENEAU : Cahier des charges 2h / PyCharm 2h
-Théo DAL GOBBO : Cahier des charges 2h / PythonAnywhere 2h
+Hugo LEFORT : Cahier des charges 2h / PyCharm 2h <br/>
+Mael TURCHETTO : Cahier des charges 2h / PyCharm 2h <br/>
+Maxime THEVENEAU : Cahier des charges 2h / PyCharm 2h <br/>
+Théo DAL GOBBO : Cahier des charges 2h / PythonAnywhere 2h <br/>
 
 Semaine 3 : <br/>     
 Hugo LEFORT : PyCharm 4h
