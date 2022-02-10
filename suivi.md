@@ -20,5 +20,5 @@ Théo DAL GOBBO : PyCharm 3h / PythonAnywhere 1h <br/><br/>
 SEMAINE 4 <br/>
 Hugo LEFORT : PyCharm 4h <br/>
 Mael TURCHETTO : PyCharm 4h <br/>
-Maxime THEVENEAU : PyCharm 4h <br/>
+Maxime THEVENEAU : MCD 2h / PyCharm 2h <br/>
 Théo DAL GOBBO : PyCharm 4h <br/>
