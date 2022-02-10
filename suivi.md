@@ -17,10 +17,10 @@ Maxime THEVENEAU : PyCharm 4h
 Théo DAL GOBBO : PyCharm 3h / PythonAnywhere 1h
 
 Semaine 4 :
-Hugo LEFORT         
-Mael TURCHETTO      
-Maxime THEVENEAU    
-Théo DAL GOBBO      
+Hugo LEFORT :        
+Mael TURCHETTO :   
+Maxime THEVENEAU :   
+Théo DAL GOBBO :
 
 Semaine 5 :
 Hugo LEFORT         
