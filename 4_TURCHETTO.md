@@ -2,7 +2,7 @@
 
 groupe numéro : 4
 
-* étudiant référent : TURCHETO Mael
+* étudiant référent : TURCHETTO Mael
 * étudiant 2 : THEVENEAU Maxime
 * étudiant 3 : DAL GOBBO Théo
 * étudiant 4 : LEFORT Hugo
