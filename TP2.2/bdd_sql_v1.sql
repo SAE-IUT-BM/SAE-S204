@@ -49,7 +49,9 @@ CREATE TABLE etat(
 
 CREATE TABLE commande(
    id_commande INT(11) NOT NULL AUTO_INCREMENT,
-   date_achat VARCHAR(50),
+   date_achat datetime,
+   id_user INT(11),
+   id_etat INT(11),
    PRIMARY KEY(id_commande)
 );
 
@@ -86,7 +88,7 @@ CREATE TABLE marque(
 CREATE TABLE telephone(
    id_telephone INT(11) NOT NULL AUTO_INCREMENT,
    nom VARCHAR(50),
-   prix VARCHAR(50),
+   prix INT,
    id_modele INT,
    id_categorie INT,
    id_marque INT,
@@ -111,11 +113,12 @@ CREATE TABLE panier(
 );
 
 CREATE TABLE ligne_commande(
-   id_commande INT,
-   id_panier INT,
-   id_telephone INT,
-   prix_unit VARCHAR(50),
-   PRIMARY KEY(id_commande, id_panier, id_telephone)
+   id_ligne_commande INT(11) NOT NULL AUTO_INCREMENT,
+   id_commande INT(11),
+   id_telephone INT(11),
+   prix INT(11),
+   quantite INT(11),
+   PRIMARY KEY(id_ligne_commande)
 );
 
 CREATE TABLE passe(
@@ -138,7 +141,6 @@ ADD CONSTRAINT fk_fournit_telephone FOREIGN KEY (id_telephone) REFERENCES teleph
 ADD CONSTRAINT fk_fournit_fournisseur FOREIGN KEY (id_fournisseur) REFERENCES fournisseur(id_fournisseur);
 ALTER TABLE ligne_commande
 ADD CONSTRAINT fk_ligneCommande_commande FOREIGN KEY (id_commande) REFERENCES commande(id_commande),
-ADD CONSTRAINT fk_ligneCommande_panier FOREIGN KEY (id_panier) REFERENCES panier(id_panier),
 ADD CONSTRAINT fk_ligneCommande_telephone FOREIGN KEY (id_telephone) REFERENCES telephone(id_telephone);
 ALTER TABLE passe
 ADD CONSTRAINT fk_passe_user FOREIGN KEY (id_user) REFERENCES user(id),
@@ -164,18 +166,23 @@ INSERT INTO marque(id_marque, libelle) VALUES
 (null, 'Honor'),
 (null, 'Oppo'),
 (null, 'Sony'),
-(null, 'Wiko');
+(null, 'Wiko'),
+(null, 'Oneplus'),
+(null, 'Oukitel'),
+(null, 'Noname');
 
 INSERT INTO modele(id_modele, libelle) VALUES
 (null, 'Note'),
-(null, 'S'),
-(null, 'iphone'),
-(null, 'P'),
-(null, 'M'),
-(null, 'honor'),
 (null, 'A'),
+(null, 'iphone'),
+(null, 'Pro'),
 (null, 'Xperia'),
-(null, 'Power');
+(null, 'Find'),
+(null, 'Honor 50'),
+(null, 'Power'),
+(null, 'P'),
+(null, 'POCO'),
+(null, 'WP');
 
 INSERT INTO fournisseur(id_fournisseur, libelle) VALUES
 (null, 'SITEPRO13'),
@@ -185,11 +192,24 @@ INSERT INTO fournisseur(id_fournisseur, libelle) VALUES
 
 INSERT INTO couleur(id_couleur, libelle) VALUES
 (null, 'Noir'),
-(null, 'Gris'),
 (null, 'Blanc'),
 (null, 'Rouge'),
-(null, 'Bleu');
+(null, 'Bleu'),
+(null, 'Vert'),
+(null, 'Rose');
 
-INSERT INTO telephone (id_telephone, nom, prix, id_modele, id_categorie, id_marque, id_couleur, image) VALUES
-(null, 'Note10', 950, 1, 1, 1, 1, null);
+INSERT INTO telephone(id_telephone, nom, prix, id_modele, id_categorie, id_marque, id_couleur, image) VALUES
+(null, 'Samsung Note 10'   , 950 , 1   , 1   , 1   , 1, null),
+(null, 'Oneplus 9 Pro'     , 920 , 4   , 1   , 9   , 2, null),
+(null, 'Wiko Power U10'    , 130 , 8   , 1   , 8   , 4, null),
+(null, 'Iphone 13'         , 809 , 3   , 1   , 2   , 2, null),
+(null, 'Huawei P50 Pro'    , 1199, 10  , 1   , 3   , 1, null),
+(null, 'Xiaomi F3'         , 369 , 10  , 1   , 4   , 1, null),
+(null, 'Honor 50'          , 549 , 7   , 1   , 5   , 2, null),
+(null, 'Oppo Find X3 Neo'  , 699 , 6   , 1   , 6   , 1, null),
+(null, 'Sony Xperia 1'     , 1299, 5   , 1   , 7   , 1, null),
+(null, 'Oukitel WP16'      , 507 , 11  , 1   , 10  , 1, null),
+(null, 'Samsung A3'        , 300 , 2   , 1   , 1   , 1, null),
+(null, 'Iphone 13 Pro Max' , 1259, 3   , 1   , 2   , 6, null);
+
 

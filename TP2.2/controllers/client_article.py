@@ -17,15 +17,19 @@ def client_article_show():                                 # remplace client_ind
     mycursor.execute(sql)
     telephones = mycursor.fetchall()
     articles = telephones
+
     sql = "select * from couleur"
     mycursor.execute(sql)
     couleur = mycursor.fetchall()
     types_articles = couleur
-    sql = "select * , 10 as prix , (SELECT nom from telephone, panier WHERE telephone.id_telephone = panier.id_telephone) as nom from panier"
+
+    sql = "SELECT id_panier, telephone.id_telephone, prix, nom, quantite FROM panier INNER JOIN telephone ON telephone.id_telephone = panier.id_telephone"
     mycursor.execute(sql)
     articles_panier = mycursor.fetchall()
-    prix_total = 123  # requete à faire
 
+    sql = "SELECT SUM(prix * quantite) AS prix FROM panier INNER JOIN telephone ON telephone.id_telephone = panier.id_telephone"
+    mycursor.execute(sql)
+    prix_total = mycursor.fetchone()
     return render_template('client/boutique/panier_article.html', articles=articles, articlesPanier=articles_panier, prix_total=prix_total, itemsFiltre=types_articles)
 
 @client_article.route('/client/article/details/<int:id>', methods=['GET'])
