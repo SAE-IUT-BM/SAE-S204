@@ -1,0 +1,45 @@
+{% extends 'admin/layout_admin.html' %}
+
+{% block title %}
+    <title>ajouter un article</title>
+{% endblock %}
+
+{% block body %}
+  <h2>Ajout d'un article</h2>
+  {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }}
+  {% endif %}
+
+     <form method="post" action="/admin/article/add">
+        <fieldset class="container border">
+            <legend class="text-black"> article</legend>
+                <div class="m-5 text-black">
+
+                    <label for="nom" class="form-label"><i class="bi bi-geo-alt-fill"> Nom</i></label>
+                    <br>
+                    <input type="text" class="form-select" name="nom" size="18" id="nom">
+                    <br>
+                    <label for="modele" class="form-label"><i class="bi bi-geo-alt-fill"> modèle</i></label>
+                    <br>
+                    <input type="text" class="form-select" name="modele" size="18" id="modele">
+                    <br>
+                    <label for="marque" class="form-label"><i class="bi bi-geo-alt-fill"> marque</i></label>
+                    <br>
+                    <input type="text" class="form-select" name="marque" size="18" id="marque">
+                    <br>
+                    <label for="categorie" class="form-label"><i class="bi bi-geo-alt-fill"> categorie</i></label>
+                    <br>
+                    <input type="text" class="form-select" name="categorie" size="18" id="categorie">
+                    <br>
+                    <label for="prix" class="form-label"><i class="bi bi-geo-alt-fill"> prix</i></label>
+                    <br>
+                    <input type="number" class="form-select" name="prix" size="18" id="prix">
+
+                <div class="text-center">
+                    <button type="button submit" class="btn btn-info mb-2">Ajouter</button>
+                </div>
+            </div>
+        </fieldset>
+      </form>
+
+{% endblock %}
